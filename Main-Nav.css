@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Roboto&display=swap");
 
 body {
   display: flex;
@@ -10,45 +11,53 @@ a {
   text-decoration: none;
 }
 
-.nav-bar {
-   background-color: #4846B9;
-   width: 100%;
-   height: 10vh;
-   min-height: 10vh;
-   position: fixed;
-   z-index: 3;
-   left: 0;
-   top: 0;
-  }
+.nav-bar-links {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #4846b9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
 
+.nav-link {
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+#picture {
+  background-image: url("Manufacturing_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 40%;
+  height: 400px;
+  /* width: 1440px;
+  min-height: 60vh; */
+}
+
+.text-container {
+  margin-top: 100px;
+  margin-left: 60px;
+  font-family: "Inter";
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    height: 37vh;
+  }
   .nav-bar-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-    align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .nav-link {
-    color: white;
-    font-size: 30px;
-    position: relative;
+    margin-bottom: 20px;
   }
-
-  @media only screen and (max-width: 600px) {
-    .nav-bar {
-      height: 37vh;
-
-    }
-    .nav-bar-links {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      margin-top: 10px;
-    }
-
-    .nav-link {
-      margin-bottom: 20px;
-    }
-  }
+}
