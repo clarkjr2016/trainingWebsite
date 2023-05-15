@@ -14,7 +14,7 @@ a {
    background-color: #4846B9;
    width: 100%;
    height: 10vh;
-   min-height: 10vh;
+   min-height: 50vh;
    position: fixed;
    z-index: 3;
    left: 0;
@@ -38,7 +38,7 @@ a {
 
   @media only screen and (max-width: 600px) {
     .nav-bar {
-      height: 37vh;
+      height: 10vh;
 
     }
     .nav-bar-links {
@@ -51,4 +51,38 @@ a {
     .nav-link {
       margin-bottom: 20px;
     }
+
+
+.nav-link {
+  /* overflow: hidden; */
+  background-color: #4846B9;
+  position: relative;
+}
+
+.nav-bar #nav-bar-links {
+  display: none;
+}
+
+.nav-bar a {
+  color: white;
+  padding: 14px 16px;
+  margin-left: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-bar a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
   }
