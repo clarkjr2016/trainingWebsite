@@ -60,16 +60,26 @@ a {
 
 .bottom_elements_container {
   display: flex;
-  flex: 1 0 auto;
+  flex: 1 0 100%;
 }
 
 .bottom_elements_container .bottom_elements {
   background-color: #5b59fd;
-  width: 33%;
+  flex: 1 0 33%;
 }
 
 .bottom_elements_container .odd {
   background-color: #4846b9;
+}
+
+.bottom_elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_elements img {
+  width: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
