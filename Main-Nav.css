@@ -25,7 +25,7 @@ a {
   align-items: center;
 }
 
-.nav-link {
+a.nav-link {
   color: white;
   font-size: 30px;
   position: relative;
@@ -86,6 +86,10 @@ a {
   margin: 5px;
 }
 
+.hamburger-icon {
+  display: none; /* hide the hamburger icon */
+}
+
 @media only screen and (max-width: 600px) {
   .nav-bar {
     height: 37vh;
@@ -95,6 +99,14 @@ a {
     align-items: center;
     justify-content: space-evenly;
     margin-top: 10px;
+  }
+
+  .nav-bar-links a.nav-link {
+    display: none; /* hide the nav links */
+  }
+
+  .nav-bar-links a.nav-link.active {
+    display: block; /* reveal the nav links */
   }
 
   .nav-link {
@@ -108,5 +120,14 @@ a {
 
   .bottom_elements_container .bottom_elements {
     width: 100%;
+  }
+
+  .hamburger-icon {
+    width: 30px;
+    height: 30px;
+    display: flex; /* this reveals the hamburger icon */
+    /* align-self: flex-start; /* this moves the hamburger icon to the right of the nav bar */
+    margin: 10px; /* gives hamburger icon some breathing room */
+    order: -1; /* this moves the hamburger icon to the top of the nav bar */
   }
 }
