@@ -31,14 +31,24 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
 }
 
 a.nav-link {
-  color: white;
-  font-size: 30px;
-  position: relative;
+  height: 15px;
+  color: black;
+  border: 1px solid #000;
+  border-radius: 18px;
+  padding: 17px 20px 14px;
+  font-family: "Axiforma Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+  transition: all .3s ease;
+  text-align: center;
+  border-color: #fff;
+  background-color: #fff;
+  margin-right: 10px;
 }
 
 #picture {
