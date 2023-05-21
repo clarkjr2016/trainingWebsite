@@ -105,7 +105,6 @@ a.nav-link {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10px;
   }
 
   .nav-bar-links a.nav-link {
