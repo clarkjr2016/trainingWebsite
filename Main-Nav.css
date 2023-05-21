@@ -2,7 +2,9 @@
   font-family: Inter;
   src: url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Roboto&display=swap);
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
   min-height: 100vh;
@@ -27,12 +29,12 @@ a {
 
 a.nav-link {
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
   position: relative;
 }
 
 #picture {
-  background-image: url("Manufacturing_photo.jpg");
+  background-image: url("/Photos/Manufacturing_photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 40%;
@@ -75,22 +77,27 @@ a.nav-link {
 
 .bottom_elements {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 1em;
+  font-size: 0.9em;
 }
 
 .bottom_elements img {
-  width: 10rem;
+  width: 40%;
   filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(184deg)
     brightness(103%) contrast(103%);
-  margin: 5px;
+}
+
+.bottom-text {
+  width: 40%;
 }
 
 .hamburger-icon {
   display: none; /* hide the hamburger icon */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 820px) {
   .nav-bar {
     height: 37vh;
   }
