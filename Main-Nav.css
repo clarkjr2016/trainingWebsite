@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Inter;
+  src: url(https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Roboto&display=swap);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar-links {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #4846b9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+#picture {
+  background-image: url("Manufacturing_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 40%;
+  height: 500px;
+  /* width: 1440px;
+  min-height: 60vh; */
+}
+
+.text-container {
+  margin-top: 100px;
+  margin-left: 60px;
+  font-family: Inter;
+  color: white;
+  font-weight: bold;
+}
+
+.text-container > h1 {
+  font-size: 65px;
+  margin-bottom: 0;
+}
+
+.text-container > h2 {
+  font-size: 25px;
+}
+
+.bottom_elements_container {
+  display: flex;
+  flex: 1 0 100%;
+  justify-content: center;
+}
+
+.bottom_elements_container .bottom_elements {
+  background-color: #5b59fd;
+  width: 33.33%;
+}
+
+.bottom_elements_container .odd {
+  background-color: #4846b9;
+}
+
+.bottom_elements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottom_elements img {
+  width: 10rem;
+  filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(184deg)
+    brightness(103%) contrast(103%);
+  margin: 5px;
+}
+
+.hamburger-icon {
+  display: none; /* hide the hamburger icon */
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    height: 37vh;
+  }
+  .nav-bar-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .nav-bar-links a.nav-link {
+    display: none; /* hide the nav links */
+  }
+
+  .nav-bar-links a.nav-link.active {
+    display: block; /* reveal the nav links */
+  }
+
+  .nav-link {
+    margin-bottom: 20px;
+  }
+
+  .bottom_elements_container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .bottom_elements_container .bottom_elements {
+    width: 100%;
+  }
+
+  .hamburger-icon {
+    width: 30px;
+    height: 30px;
+    display: flex; /* this reveals the hamburger icon */
+    /* align-self: flex-start; /* this moves the hamburger icon to the right of the nav bar */
+    margin: 10px; /* gives hamburger icon some breathing room */
+    order: -1; /* this moves the hamburger icon to the top of the nav bar */
+  }
+}
