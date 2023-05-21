@@ -14,6 +14,16 @@ a {
   text-decoration: none;
 }
 
+.site-header {
+  display: flex;
+  flex-direction: row;
+  background-color: #4846b9;
+}
+
+.logo-container {
+  width: 50%;
+}
+
 .nav-bar-links {
   min-height: 10vh;
   width: 100%;
