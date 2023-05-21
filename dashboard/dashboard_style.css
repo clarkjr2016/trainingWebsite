@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 100vh;
+}
+
+header {
+  background-color: #4846b9;
+  display: flex;
+}
+
+header img {
+  width: 1em;
+  display: block;
+}
