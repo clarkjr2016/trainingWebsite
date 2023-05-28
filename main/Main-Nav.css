@@ -109,11 +109,11 @@ a.nav-link {
   }
 
   .nav-bar-links a.nav-link {
-    display: none; /* hide the nav links */
+    /* display: none; hide the nav links */
   }
 
   .nav-bar-links a.nav-link.active {
-    display: block; /* reveal the nav links */
+    display: block; reveal the nav links
   }
 
   .nav-link {
