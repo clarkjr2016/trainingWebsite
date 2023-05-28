@@ -16,6 +16,32 @@ a {
   text-decoration: none;
 }
 
+#elephant_logo {
+  height: 90px;
+  width: 200px;
+  /* margin-right: auto; */
+}
+
+#log_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 350px;
+}
+
+#log_container button {
+  background-color: #f5f5f5;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+}
+
 .nav-bar-links {
   min-height: 10vh;
   width: 100%;
@@ -23,7 +49,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -58,6 +84,14 @@ a.nav-link {
 
 .text-container > h2 {
   font-size: 25px;
+}
+
+.text-container button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
 }
 
 .bottom_elements_container {
@@ -108,9 +142,9 @@ a.nav-link {
     margin-top: 10px;
   }
 
-  .nav-bar-links a.nav-link {
-    /* display: none; hide the nav links */
-  }
+  /* .nav-bar-links a.nav-link {
+    /* display: none; hide the nav links 
+  } */
 
   .nav-bar-links a.nav-link.active {
     display: block;
