@@ -5,16 +5,31 @@
 }
 body {
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 5% 95%;
   height: 100vh;
 }
 
 header {
   background-color: #4846b9;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header img {
-  width: 1em;
+#magnify {
+  width: 30px;
   display: block;
+  margin: 0 10px;
+}
+
+#header_icons {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  padding: 0 20px;
+}
+
+#header_icons img {
+  width: 30px;
+  margin: 0 10px;
 }
