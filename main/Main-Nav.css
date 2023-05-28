@@ -113,7 +113,7 @@ a.nav-link {
   }
 
   .nav-bar-links a.nav-link.active {
-    display: block; reveal the nav links
+    display: block;
   }
 
   .nav-link {
@@ -127,14 +127,5 @@ a.nav-link {
 
   .bottom_elements_container .bottom_elements {
     width: 100%;
-  }
-
-  .hamburger-icon {
-    width: 30px;
-    height: 30px;
-    display: flex; /* this reveals the hamburger icon */
-    /* align-self: flex-start; /* this moves the hamburger icon to the right of the nav bar */
-    margin: 10px; /* gives hamburger icon some breathing room */
-    order: -1; /* this moves the hamburger icon to the top of the nav bar */
   }
 }
