@@ -51,11 +51,31 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
+  gap: 20px;
+  padding: 10px 0;
   border: 5px solid black;
+  position: relative;
 }
 
 #main_right {
   background-color: #605dcc;
+}
+
+#main_left img {
+  width: 50px;
+  margin: 10px 0;
+}
+
+.left_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+#menu {
+  position: absolute;
+  top: 0px;
+  right: 10px;
 }
