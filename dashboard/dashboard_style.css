@@ -54,7 +54,6 @@ main {
   padding: 10px 0;
   position: relative;
   min-width: 410px;
-  overflow: auto; /* Added overflow property */
 }
 
 #main_right {
@@ -62,7 +61,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto; /* Added overflow property */
 }
 
 #main_left img {
@@ -138,5 +136,9 @@ main {
     grid-template-rows: minmax(0, 1fr) minmax(0, 2fr); /* Updated grid-template-columns */
     grid-template-columns: 100%;
     background-color: #605dcc;
+  }
+
+  #main_left {
+    display: none;
   }
 }
